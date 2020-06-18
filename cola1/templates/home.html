@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>HA 555 Signature Assignment</title>
+
+  <!-- 
+  <link rel="icon" href="{% static 'website/img/core-img/favicon.heic' %}">
+  -->
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+   
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+       
+           <a href="{% url 'home' %}"><h2> HA-555</h2></a>
+            
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+             <!-- Nav Start -->
+              <div class="classynav"> 
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+               
+                  <li><a href="{% url 'about' %}">About Project</a></li>
+                  <li><a href="{% url 'projectschedule' %}">Project Schedule</a></li>
+                  <li><a href="{% url 'budgettable' %}">Budget Table</a></li>
+                  <li><a href="{% url 'aon' %}">AON</a></li>
+                  <li><a href="{% url 'wbs' %}">WBS</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+
+      
+                </div>
+                    
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+
+            <!-- Booking Now Button -->
+        
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});"> 
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInUp" data-delay="100ms">Website Project Plan</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">Jason Schwier </br> Signature Assignment </br> July 5, 2020 </p>
+                <div class="welcome-btn-group">
+                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Learn More</a>
+                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact PM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/2.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInDown" data-delay="100ms">Although, not required for the purpose of this course, the project plans were implemented.</h2>
+                <p data-animation="fadeInDown" data-delay="300ms"></p>
+                <div class="welcome-btn-group">
+                  <a href="{% url 'about' %}" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Learn More</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact PM</a>
+                </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-img bg-gradient-overlay jarallax">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by 
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script> 
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
