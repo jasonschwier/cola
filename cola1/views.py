@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
 
 def home(request):
 	return render(request, 'home.html', {})
@@ -20,4 +21,22 @@ def wbs(request):
 	return render(request, "wbs.html", {})
 
 def contact(request):
-	return render(request, "contact.html", {})
+	if request.method == "POST":
+		#do stuff
+		message_name = request.POST['message-name']
+		message_email = request.POST['message-email']
+		message = request.POST['message']
+
+		
+		send_mail(
+			message_name,   #subject
+			message,	# message
+			message_email,	# from email
+			['jasonschwier486@gmail.com'],	# to email
+			fail_silently=True, 
+			)
+
+		return render(request, 'contact.html', {'message_name':message_name})
+	else:
+		#return the page
+		return render(request, 'contact.html', {})

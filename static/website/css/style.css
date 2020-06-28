@@ -405,10 +405,10 @@ ul {
       padding: 0 20px; } }
   .dento-btn.active, .dento-btn:focus, .dento-btn:hover {
     box-shadow: none;
-    background-color: transparent;
-    color: #00aeef; }
+    background-color: transparent ;
+    color: #ffffff; }
   .dento-btn.btn-2:focus, .dento-btn.btn-2:hover {
-    background-color: #ffffff;
+    background-color: #00aeef;
     color: #00aeef; }
   .dento-btn.booking-btn {
     color: #ffffff !important;
@@ -1477,7 +1477,7 @@ ul {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 470px; }
+    height: 300px; }
     @media only screen and (max-width: 767px) {
       .dento-contact-area .google-maps {
         height: 280px; } }
@@ -1515,5 +1515,8 @@ ul {
   .contact-form textarea.form-control {
     height: 110px;
     padding: 15px; }
+
+
+                                    
 
 /*# sourceMappingURL=style.css.map */

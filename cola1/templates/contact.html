@@ -38,8 +38,10 @@
           <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
-            <!-- Logo -->
-            <a href="{% url 'home' %}"><h2> HA-555</h2></a> 
+              <a href="{% url 'home' %}">
+
+                <img src="{% static 'website/img/core-img/picture1.png' %}" width="200">
+              </a>
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -58,14 +60,14 @@
                             <!-- Nav Start -->
               <div class="classynav"> 
                 <ul id="nav">
-                  <li><a href="{% url 'home' %}">Home</a></li>
+             
                
-                  <li><a href="{% url 'about' %}">About Project</a></li>
-                  <li><a href="{% url 'projectschedule' %}">Project Schedule</a></li>
-                  <li><a href="{% url 'budgettable' %}">Budget Table</a></li>
-                  <li><a href="{% url 'aon' %}">AON</a></li>
-                  <li><a href="{% url 'wbs' %}">WBS</a></li>
-                  <li><a href="{% url 'contact' %}">Contact</a></li>
+        
+                  <li><a href="{% url 'projectschedule' %}">Project Schedule&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'budgettable' %}">Budget Table&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'aon' %}">AON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'wbs' %}">WBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'contact' %}">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
@@ -89,20 +91,7 @@
       </div>
     </div>
   </div>
-  <div class="breadcumb--con">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- ***** Breadcrumb Area End ***** -->
   {% if message_name %}
   <center><h3>Thanks {{ message_name }}!</h3>
@@ -116,10 +105,11 @@
       <div class="row">
         <div class="col-12">
           <div class="google-maps mb-100">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.4024513437207!2d-118.40161188539822!3d34.18719228056935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2967bfaf40de5%3A0x9016d46b5d806e37!2s12215%20Victory%20Blvd%2C%20North%20Hollywood%2C%20CA%2091606!5e0!3m2!1sen!2sus!4v1592297442324!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.4024513437207!2d-118.40161188539822!3d34.18719228056935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2967bfaf40de5%3A0x9016d46b5d806e37!2s12215%20Victory%20Blvd%2C%20North%20Hollywood%2C%20CA%2091606!5e0!3m2!1sen!2sus!4v1592297442324!5m2!1sen!2sus" width="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
       </div>
+
 
       <div class="row">
         <!-- Contact Information -->
@@ -130,7 +120,7 @@
             North Hollywood, CA 91606 </p>
 
             <h5>Phone</h5>
-            <p>(818) 299-5500</p>
+            <p>(951) 616-8645</p>
 
            
 
@@ -270,7 +260,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       </div>
     </div>
   </footer>  
+
+
   --->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></br></br>
+       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jason Schwier ©2020 www.pmwebsiteproject.com</p>
+     
+  </div>
+</nav>    
   <!-- ******* All JS ******* -->
   <!-- jQuery js -->
   <script src="{% static 'website/js/jquery.min.js' %}"></script> 

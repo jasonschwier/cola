@@ -11,9 +11,9 @@
   <!-- Title -->
   <title>HA 555 Signature Assignment</title>
 
-  <!-- 
-  <link rel="icon" href="{% static 'website/img/core-img/favicon.heic' %}">
-  -->
+  
+  <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+  
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
@@ -39,46 +39,25 @@
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
        
-           <a href="{% url 'home' %}"><h2> HA-555</h2></a>
-            
+         
+          <a href= "{% url 'home' %}">
+            <img src="{% static 'website/img/core-img/picture1.png' %}" width="200">
+          </a>
 
-            <!-- Navbar Toggler -->
-            <div class="classy-navbar-toggler">
-              <span class="navbarToggler"><span></span><span></span><span></span></span>
-            </div>
-
-            <!-- Menu -->
-            <div class="classy-menu">
-
-              <!-- Close Button -->
-              <div class="classycloseIcon">
-                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-              </div>
-
-             <!-- Nav Start -->
               <div class="classynav"> 
                 <ul id="nav">
-                  <li><a href="{% url 'home' %}">Home</a></li>
-               
-                  <li><a href="{% url 'about' %}">About Project</a></li>
-                  <li><a href="{% url 'projectschedule' %}">Project Schedule</a></li>
-                  <li><a href="{% url 'budgettable' %}">Budget Table</a></li>
-                  <li><a href="{% url 'aon' %}">AON</a></li>
-                  <li><a href="{% url 'wbs' %}">WBS</a></li>
-                  <li><a href="{% url 'contact' %}">Contact</a></li>
+ 
+                  <li><a href="{% url 'projectschedule' %}">Project Schedule&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'budgettable' %}">Budget Table&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'aon' %}">AON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'wbs' %}">WBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="{% url 'contact' %}">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 
-      
-                </div>
-                    
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Nav End -->
+                   
+              </ul>
             </div>
+          </div>
 
-
-            <!-- Booking Now Button -->
         
           </nav>
         </div>
@@ -92,17 +71,17 @@
     <!-- Welcome Slides -->
     <div class="welcome-slides owl-carousel">
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});"> 
+      <div class="welcome-welcome-slide bg-img" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});"> 
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
                 <h2 data-animation="fadeInUp" data-delay="100ms">Website Project Plan</h2>
-                <p data-animation="fadeInUp" data-delay="300ms">Jason Schwier </br> Signature Assignment </br> July 5, 2020 </p>
+                <p data-animation="fadeInUp" data-delay="300ms">Jason Schwier </br> HA-555 Signature Assignment </br> July 5, 2020 </p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Learn More</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact PM</a>
+                  
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="700ms">Contact PM</a>
                 </div>
               </div>
             </div>
@@ -117,11 +96,12 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInDown" data-delay="100ms">Although, not required for the purpose of this course, the project plans were implemented.</h2>
-                <p data-animation="fadeInDown" data-delay="300ms"></p>
+                <h2 data-animation="fadeInDown" data-delay="50ms">Information found on this website is based on information from the Signature Assignment</h2>
+                <p data-animation="fadeInDown" data-delay="150ms"></p>
                 <div class="welcome-btn-group">
-                  <a href="{% url 'about' %}" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Learn More</a>
-                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact PM</a>
+                  <a href="{% static 'website/img/core-img/SA.pdf' %}" download class="btn btn-success mx-2" data-animation="fadeInDown" data-delay="700ms">Download PDF version</a>
+                
+
                 </div>
 
           </div>
@@ -134,20 +114,194 @@
         </div>
       </div>
     </div>
-  </section>
+  </section></br>
 
-  <div class="container-fluid bg-img bg-gradient-overlay jarallax">
-      <div class="row">
-        <div class="col-12">
-          <div class="copywrite-content">
-            <p>
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by 
-              </p>
-          </div>
-        </div>
+  <div class="container">
+    <h4>Scope Statement</h4>
+  </div>
+
+
+  <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+   
+      <h5 class="mb-0">
+        <button class="list-group-item list-group-item-action list-group-item-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <center>
+            <img src="{% static 'website/img/icons/target.png' %}" width="35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Objective
+          </center>
+        </button>
+      </h5>
+    </div>
+  </div>
+
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class = "container">
+       The objective of this project is to create a website which shows each component of the Signature Assignment. Also, this website may be used to disseminate information to future project participants.  Planning for this project began on June 11, 2020 and the completion deadline is June 28, 2020. Total  costs for this project was $6, which is the cost for registering the domain name. Even though project work was not outsourced to a web developer, the budget table on this website represents what it would cost to outsource project work. Given that project work was not outsourced, implementing the plans contained in the Signature Assignment was achievable.   
+      </div>
       </div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="list-group-item list-group-item-action list-group-item-secondary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <center>
+            <img src="{% static 'website/img/icons/deliverables.png' %}" width="35">&nbsp;&nbsp;&nbsp;Project Deliverables
+          </center>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+         <div class = "container">
+          <div class = "container">
+          <ol>
+          <emsp>
+            <li>1. A carousel timed welcome page </li>
+            <li>2. A navigation menu with a tabs for the project schedule, budget table, AON and WBS</li>
+            <li>3. A stand-alone “contact” page</li>
+            <li>4. A project schedule page with the project’s schedule</li>
+            <li>5. A budget table page with the project’s budget table</li> 
+            <li>6. An AON page with the applicable AON</li>
+            <li>7. An WBS page with the applicable WBS</li>
+            <li>8. A logo in the top left of every page </li>
+            <li>9. A favicon related to project management</li>
+            <li>10. A button on the home page that’s allows viewers to download this paper in pdf format</li>
+            <li>11. Expanding sections on the home page which contains information on the project’s scope</li>
+            <li>12. Footers with copyright statement on each page</li>
+            <li>13. A loading graphic when pages are in the process of loading</li>
+            <li>14. Computer related graphics on every page</li>
+            <li>15. Modern font style</li>
+
+          </emsp>
+          </ol>
+    </div>
+  </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="list-group-item list-group-item-action list-group-item-secondary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <center>
+            <img src="{% static 'website/img/icons/milestones.png' %}" width="35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Milestones
+          </center>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+         <div class = "container">
+          <ol>
+            <emsp>
+              <li>1. Phase I complete - June 18</li>
+              <li>2. Phase II complete - June 23</li>
+              <li>3. Phase II complete - June 28</li>
+            </emsp>
+          </ol>
+
+        <p> Significant events for this project include the completion of each project phase. First, completion of phase I is significant because it marks the end of the initiation phase. In the initiation phase, requirements for the website are identified and a general idea of the finished product's purpose has been established. Second, completion of phase II is significant because it marks the end of the building phase. At the end of phase II, the website should be fully functional and only minor changes should be needed. Last, completion of phase III is significant because it marks the end of the quality control phase. When the quality control phase has been completed, the website can go "live."<p>
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="card">
+  <div class="card-header" id="headingFour">
+    <h5 class="mb-0">
+      <button class="list-group-item list-group-item-action list-group-item-secondary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <center>
+          <img src="{% static 'website/img/icons/techreq.png' %}" width="35">&nbsp;&nbspTechnical Requirements
+        </center>
+      </button>
+    </h5>
+  </div>
+  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+    <div class="card-body">
+       <div class = "container">
+          <h4>Coding languages:</h4>
+          <div class="container"> 
+          <ol>
+            1. Python</br>
+            2. Hypertext Markup Language (HTML)</br>
+            3. Cascading Style Sheets (CSS)</br>
+            4. JavaScript (JS)</br>
+          </ol>
+          </div>
+
+          <h4>Third-party software/services:</h4>
+          <div class="container">
+          <ol>
+          1. text editor </br> 
+          2. cloud-based storage </br>
+          3. web hosting service</br>
+          4. domain name registrar</br>
+          </ol>
+          </div>
+
+          <p>The technical requirements for this project can be grouped into two categories. First, knowledge of programming and markup languages such as Python, HTML, CSS, and JS ensures the proper performance of the website. Python is the programming language which handles all back-end operations. HTML, CSS, and JS are front-end languages responsible for the website's appearance. Second, several third-party applications and services are required in order to build and publish a website. Sublime Text has been chosen as the text editor which is the platform where code is written into. GitHub is a cloud-based services which allows programmers to store their projects. Data stored on GitHub can be pushed to a web hosting service for publication such as Heroku. Last, a domain name registrar is required to create a unique website name. Although, there are several domain name registrars to choose from, Namecheap is the domain name registrar chosen for this project.</p> 
+
+    </div>
+  </div>
+  </div>
+</div>
+
+  <div class="card">
+  <div class="card-header" id="headingFive">
+    <h5 class="mb-0">
+      <button class="list-group-item list-group-item-action list-group-item-secondary" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      <center>
+        <img src="{% static 'website/img/icons/limit.png' %}" width="35">&nbsp;&nbsp;&nbsp; Limits and Exclusions
+      </center>
+      </button>
+    </h5>
+  </div>
+  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+    <div class="card-body">
+       <div class = "container">
+        <ol>
+        <emsp>
+          <li>1. This website does not include the project's priorities, responsibility matrix or communication plan.</li> 
+
+          <li>2. Project work should not be outsourced to a web developer.</li>
+
+          <li>3. This website is not intended to have more than two viewers at any given moment; otherwise, the website will slow down significantly.</li> 
+
+          <li>4. The domain name, www.pmwebsiteproject.com, will not be renewed after it expires in one year.</li>
+
+          <li>5. Regular maintenance of the website will not be conducted.</li> 
+        <emsp>
+        </ol>
+
+
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></br></br>
+       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jason Schwier ©2020 www.pmwebsiteproject.com</p>
+     
+  </div>
+</nav>    
+
+
+     
 
   <!-- ******* All JS ******* -->
   <!-- jQuery js -->
